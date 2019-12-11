@@ -48,7 +48,7 @@ def sendmail(lmoney):
 #爬虫部分
 def Spider():
     
-    url='http://wap.xt.beescrm.com/base/electricityHd/queryResult/ele_id/7/community_id/57/building_id/292/floor_id/2129/room_id/37083/flag/1'
+    url='http://wap.xt.beescrm.com/base/electricityHd/queryResult/ele_id/7/community_id/57/building_id/292/floor_id/2124/room_id/36896/flag/1'#以28号楼1楼108寝室为例
     header={'user-agent':'Mozilla/5.0'}
     t1=requests.get(url,headers=header,timeout=300)
     t1.encoding='utf-8'
