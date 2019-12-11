@@ -24,7 +24,7 @@ def sleeptime(h,m,s):
 
 def sendmail(lmoney):
     #发送邮件部分
-    my_sender='datamasking@163.com'
+    my_sender='datamasking@163.com'#发送者邮箱
     subject="电费不足!"
     message='电费不足，请您及时缴费。剩余电费：{}元。Do not have enough balance, please pay in time. Left balance:{} yuan.'.format(lmoney,lmoney)
     msg = MIMEText(message,'plain', 'utf-8') 
@@ -33,7 +33,7 @@ def sendmail(lmoney):
     msg['Subject']=Header(subject,'utf-8')
     # 输入Email地址和口令:
     from_addr = my_sender
-    password = 'zheshimimi12'
+    password = 'password123'#邮箱密码
     # 输入收件人地址:
     to_addr = ['XXX1@qq.com','XXX2@qq.com','XXX3@qq.com']
     # 输入SMTP服务器地址:
