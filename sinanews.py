@@ -18,8 +18,8 @@ try:
         t2=requests.get(urltarget,headers=header)
         t2.encoding='utf-8'
         soup2=BeautifulSoup(t2.text,"html.parser")
-        if soup2.find('div', id='artibody'):
-            all_p=soup2.find('div', id='artibody').find_all('p') 
+        if soup2.find('div', id='article'):
+            all_p=soup2.find('div', id='article').find_all('p') 
             for p in all_p[0:5]:
                 print(p.text)
         else:
